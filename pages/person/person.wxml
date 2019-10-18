@@ -1,0 +1,31 @@
+<!--pages/person/person.wxml-->
+<view class="person">
+  <view class="top">
+    <view class="left">
+      <image src="../images/head.png"></image>
+    </view>
+    <view class="center">
+      <text class="userName">我是小胖胖</text>
+      <text class="userTel">150****0000</text>
+      <view class="level">雇主Lv:
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="level">佣兵Lv:
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+    </view>
+    <view class="right">
+      <view><image src="../images/setting.png"></image>账号管理</view>
+      <image src="../images/wallet.png"></image>
+    </view>
+  </view>
+  <view class="bottom"></view>
+</view>

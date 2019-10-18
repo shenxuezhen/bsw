@@ -1,6 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/task/task",
+    "pages/editTask/editTask",
+    "pages/post/post",
+    "pages/editPost/editPost",
+    "pages/person/person",
+    "pages/add/add",
     "pages/logs/logs"
   ],
   "window": {
@@ -8,6 +14,42 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#777777",
+    "selectedColor":"#000",
+    "backgroundColor":"#fff",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"pages/images/index.png",
+      "selectedIconPath":"pages/images/index-s.png"
+    },
+    {
+      "pagePath": "pages/post/post",
+      "text": "帖子",
+      "iconPath": "pages/images/post.png",
+      "selectedIconPath": "pages/images/post-s.png"
+    },
+    {
+      "pagePath": "pages/add/add",
+      "text": "发布",
+      "iconPath": "pages/images/add.png",
+      "selectedIconPath": "pages/images/add-s.png"
+    },
+    {
+      "pagePath": "pages/task/task",
+      "text": "任务",
+      "iconPath": "pages/images/task.png",
+      "selectedIconPath": "pages/images/task-s.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "个人",
+      "iconPath": "pages/images/person.png",
+      "selectedIconPath": "pages/images/person-s.png"
+    }]
   },
   "sitemapLocation": "sitemap.json"
 }

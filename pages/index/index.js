@@ -1,14 +1,32 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const speedDatas=require('../data/index.js')
 
 Page({
+  onShareAppMessage: function () {
+    return {
+      title: 'swiper',
+      path: 'page/component/pages/swiper/swiper'
+    }
+  },
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    swipers: {
+      background: ['', '', '',''],
+      indicatorDots: true,
+      vertical: false,
+      autoplay: true,
+      interval: 2000,
+      duration: 500,
+      indicatorColor:'blue'
+    },
+    speedData:[],
+    complatedData:[],
+    hotData:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -17,6 +35,11 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      speedData: speedDatas.data.speed,
+      complatedData: speedDatas.data.complated,
+      hotData: speedDatas.data.hot
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -43,6 +66,14 @@ Page({
         }
       })
     }
+  },
+  swiperChange: function () {
+  },
+  jumpDetail(e) {
+    console.log(111);
+    var url = e.currentTarget.dataset.url;
+    var type = e.currentTarget.dataset.type;
+    wx.navigateTo({ url: url})
   },
   getUserInfo: function(e) {
     console.log(e)

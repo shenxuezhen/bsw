@@ -1,0 +1,74 @@
+/* pages/person/person.wxss */
+
+.person {
+  padding: 30rpx;
+}
+
+.top {
+  padding-bottom: 18rpx;
+  width: 100%;
+  height: 162rpx;
+  border-bottom: 3rpx solid #000;
+  justify-content: space-between;
+}
+
+.top>view {
+  display: inline-block;
+}
+
+.left {
+  margin-right: 25rpx;
+  width: 162rpx;
+  height: 100%;
+}
+
+.left image {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  width: 262rpx;
+  height: 100%;
+}
+
+.center text {
+  width: 100%;
+  display: block;
+}
+
+.center text.userName {
+  margin-bottom: 10rpx;
+  font: 28rpx;
+  color: #000;
+}
+
+.center text.userTel {
+  font-size: 20rpx;
+  color: #353535;
+}
+
+.level{
+  font-size: 22rpx;
+  color: #353535;
+}
+
+.level image{
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.right view{
+  width: 100;
+  height: 28rpx;
+}
+.right view image{
+  display: inline-block;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.right>image{
+  width: 80rpx;
+  height: 68rpx;
+}

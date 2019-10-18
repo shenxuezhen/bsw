@@ -19,3 +19,71 @@
 .usermotto {
   margin-top: 200px;
 }
+
+
+
+.header{
+  margin: 22rpx auto 22rpx;
+  width: 100%;
+  height: 170rpx;
+  text-align: center;
+}
+.header image{
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.swiper {
+  margin: 0 auto;
+  width: 680rpx;
+  height: 300rpx;
+  border-radius: 24rpx;
+}
+
+swiper{
+  height: 300rpx!important;
+}
+
+swiper-item{
+  
+  background: red;
+  border-radius: 24rpx;
+}
+
+.swiper-item{
+  width: 100%;
+  height: 100%;
+}
+
+.list{
+  margin-bottom: 10rpx;
+}
+
+.list>view{
+  position: relative;
+  margin: 16px auto 0;
+  width: 680rpx;
+  height: 300rpx;
+}
+
+.list view image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.speed>view,.complated>view,.hot>view{
+  position: absolute;
+  padding: 46rpx 26rpx 0 26rpx;
+  height: 210rpx;
+  overflow: hidden;
+}
+.speed .listLi,.complated .listLi,.hot .listLi{
+  margin-right: 14rpx;
+  display: inline-block;
+  width: 164rpx;
+  height: 18rpx;
+  line-height: 18rpx;
+  font-size: 18rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

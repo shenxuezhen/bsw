@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <!--<view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -10,5 +10,39 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
     <text>你好</text>
+  </view>-->
+  <view class="header">
+    <image src="../images/logo.png"></image>
+  </view>
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{swipers.indicatorDots}}" autoplay="{{swipers.autoplay}}" interval="{{swipers.interval}}" duration="{{swipers.duration}}" indicator-color="{{swipers.indicatorColor}}" bindchange="swiperChange">
+      <block wx:for="{{swipers.background}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <view class="swiper-item {{item}}"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="list">
+    <view class="speed">
+      <image src="../images/speed-bg.png"></image>
+      <view>
+        <view class="listLi" wx:for="{{speedData}}" wx:key="{{item.id}}">
+          <view data-url="{{item.url}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+   <view class="complated">
+      <image src="../images/complated-bg.png"></image>
+      <view>
+        <view class="listLi" wx:for="{{complatedData}}"  wx:key="{{item.id}}" data-url="{{item.url}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
+      </view>
+    </view>
+    <view class="hot">
+      <image src="../images/hot-bg.png"></image>
+      <view>
+        <view class="listLi" wx:for="{{hotData}}" wx:key="{{item.id}}" data-url="{{item.url}}" data-type="hot" bindtap="jumpDetail">{{item.title}}</view>
+      </view>
+    </view>
   </view>
 </view>
