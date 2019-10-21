@@ -1,1 +1,70 @@
 /* pages/task/task.wxss */
+
+.postList {
+  padding: 30rpx;
+}
+
+.title {
+  padding: 10rpx 0 50rpx 0;
+  text-align: center;
+  font-size: 38rpx;
+  font-weight: bold;
+  letter-spacing: 10rpx;
+}
+
+.searchMoudle {
+  position: relative;
+  padding-left: 48rpx;
+  width: 640rpx;
+  height: 60rpx;
+  border: 1rpx solid #a0a0a0;
+  border-radius: 30rpx;
+}
+
+.searchMoudle input {
+  width: 100%;
+  height: 100%;
+}
+
+.searchMoudle image {
+  position: absolute;
+  top: 12rpx;
+  left: 12rpx;
+  width: 33rpx;
+  height: 33rpx;
+}
+.filterMoudle{
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.filterMoudle button {
+  display: inline-block;
+  margin-right: 10rpx;
+  width: 165rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 22rpx;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.filterMoudle button:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.list text {
+  display: inline-block;
+  margin-top: 30rpx;
+  padding: 10rpx;
+  width: 500rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #a0a0a0;
+  border-radius: 10rpx;
+  overflow: hidden;
+}

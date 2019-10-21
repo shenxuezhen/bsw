@@ -9,7 +9,6 @@
   width: 100%;
   height: 162rpx;
   border-bottom: 3rpx solid #000;
-  justify-content: space-between;
 }
 
 .top>view {
@@ -17,6 +16,7 @@
 }
 
 .left {
+  float: left;
   margin-right: 25rpx;
   width: 162rpx;
   height: 100%;
@@ -28,7 +28,8 @@
 }
 
 .center {
-  width: 262rpx;
+  float: left;
+  width: 302rpx;
   height: 100%;
 }
 
@@ -41,34 +42,66 @@
   margin-bottom: 10rpx;
   font: 28rpx;
   color: #000;
+  letter-spacing:2rpx;
 }
 
 .center text.userTel {
+  margin-bottom: 10rpx;
   font-size: 20rpx;
   color: #353535;
 }
 
-.level{
-  font-size: 22rpx;
+.level {
+  font-size: 24rpx;
   color: #353535;
 }
 
-.level image{
+.level image {
+  margin-right: 4rpx;
   width: 20rpx;
   height: 20rpx;
 }
 
-.right view{
-  width: 100;
-  height: 28rpx;
+.right {
+  position: relative;
+  width: 200rpx;
+  height: 100%;
 }
-.right view image{
+
+.right view {
+  float: right;
+  width: 100;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.right view image {
   display: inline-block;
   width: 28rpx;
   height: 28rpx;
+  float: left;
+  margin: 6rpx;
 }
 
-.right>image{
+.right>image {
+  position: absolute;
+  bottom: 8rpx;
+  right: 0;
   width: 80rpx;
   height: 68rpx;
+}
+
+.bottom view{
+  display: inline-block;
+  margin: 50rpx 50rpx 0;
+  width: 200rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  text-align: center;
+  font-size: 28rpx;
+  letter-spacing:8rpx;
+  border: 2rpx solid #353535;
+}
+.bottom view:nth-of-type(even){
+  margin-left: 120rpx;
 }

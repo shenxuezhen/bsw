@@ -27,5 +27,11 @@
       <image src="../images/wallet.png"></image>
     </view>
   </view>
-  <view class="bottom"></view>
+  <view class="bottom">
+  <view data-url="myRelease" bindtap="jumpPage">我的发布</view>
+  <view data-url="myAccept" bindtap="jumpPage">我的接取</view>
+  <view data-url="myCollect" bindtap="jumpPage">我的收藏</view>
+  <view data-url="myInfo" bindtap="jumpPage">我的消息</view>
+  <view data-url="contactUS" bindtap="jumpPage">联系客服</view>
+  </view>
 </view>

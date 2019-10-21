@@ -1,2 +1,43 @@
 <!--pages/task/task.wxml-->
-<text>pages/task/task.wxml</text>
+<view class="postList">
+  <view class="title">帖子大厅</view>
+  <view class="searchMoudle">
+    <input></input>
+    <image src="../images/search.png"></image>
+  </view>
+  <view class="filterMoudle">
+    <button>综 合↑</button>
+    <button>发布时间↑</button>
+    <button>剩余时间↑</button>
+    <button>积 分↑</button>
+  </view>
+  <view class="list">
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+    <view>
+      <text>水电费水电费水电费水电费水电费水电费…</text>
+    </view>
+  </view>
+</view>

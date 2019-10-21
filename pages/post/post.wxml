@@ -1,2 +1,19 @@
 <!--pages/post/post.wxml-->
-<text>pages/post/post.wxml</text>
+
+<view class="postList">
+  <view class="title">任务大厅</view>
+  <view class="searchMoudle">
+    <input></input>
+    <image src="../images/search.png"></image>
+  </view>
+  <view class="list">
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text>水电费水电费水电费水电费水电费水电费…</text>
+  </view>
+</view>
