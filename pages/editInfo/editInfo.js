@@ -1,4 +1,4 @@
-// pages/editTask/editTask.js
+// pages/editInfo/editInfo.js
 Page({
 
   /**

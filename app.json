@@ -2,9 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/task/task",
-    "pages/editTask/editTask",
+    "pages/editInfo/editInfo",
     "pages/post/post",
-    "pages/editPost/editPost",
     "pages/person/person",
     "pages/add/add",
     "pages/logs/logs"

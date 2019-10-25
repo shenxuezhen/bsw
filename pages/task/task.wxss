@@ -33,7 +33,8 @@
   width: 33rpx;
   height: 33rpx;
 }
-.filterMoudle{
+
+.filterMoudle {
   margin-top: 30rpx;
   padding-bottom: 30rpx;
 }
@@ -56,15 +57,47 @@
   margin-right: 0;
 }
 
+.list>view {
+  position: relative;
+}
+
 .list text {
   display: inline-block;
-  margin-top: 30rpx;
-  padding: 10rpx;
-  width: 500rpx;
+  margin-bottom: 30rpx;
+  padding: 10rpx 160rpx 10rpx 10rpx;
+  width: 370rpx;
   height: 40rpx;
   line-height: 40rpx;
   font-size: 28rpx;
   border: 1rpx solid #a0a0a0;
   border-radius: 10rpx;
   overflow: hidden;
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+}
+
+.level {
+  position: absolute;
+  top: 10rpx;
+  right: 100rpx;
+  width: 200rpx;
+  overflow: hidden;
+}
+
+.level image {
+  margin-right: 6rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.total {
+  float: right;
+  margin-right: 5rpx;
+  width: 130rpx;
+  height: 57rpx;
+  line-height: 57rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1px solid #a0a0a0;
+  border-radius: 10rpx;
 }

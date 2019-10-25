@@ -1,0 +1,6 @@
+<!--pages/editInfo/editInfo.wxml-->
+<view class="editInfo">
+<view class="title">
+<view class="titleTag">标题：</view><input placeholder="请输入标题"></input>
+</view>
+</view>

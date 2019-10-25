@@ -1,6 +1,6 @@
 <!--pages/task/task.wxml-->
 <view class="postList">
-  <view class="title">帖子大厅</view>
+  <view class="title">任务大厅</view>
   <view class="searchMoudle">
     <input></input>
     <image src="../images/search.png"></image>
@@ -14,30 +14,102 @@
   <view class="list">
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
     <view>
       <text>水电费水电费水电费水电费水电费水电费…</text>
+      <view class="level">
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level-s.png"></image>
+        <image src="../images/level.png"></image>
+        <image src="../images/level.png"></image>
+      </view>
+      <view class="total">￥90.00 </view>
     </view>
   </view>
 </view>

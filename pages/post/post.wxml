@@ -1,7 +1,7 @@
 <!--pages/post/post.wxml-->
 
 <view class="postList">
-  <view class="title">任务大厅</view>
+  <view class="title">帖子大厅</view>
   <view class="searchMoudle">
     <input></input>
     <image src="../images/search.png"></image>
