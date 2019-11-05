@@ -39,6 +39,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 4,
 			"list": [
@@ -74,6 +78,13 @@
 					"id": -1,
 					"name": "pages/editInfo/editInfo",
 					"pathName": "pages/editInfo/editInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/add/add",
+					"pathName": "pages/add/add",
 					"scene": null
 				}
 			]

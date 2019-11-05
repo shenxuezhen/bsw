@@ -1,1 +1,11 @@
 /* pages/add/add.wxss */
+.editInfo{
+  margin: 52rpx 80rpx;
+}
+.title{
+  width: 486rpx;
+  height: 46rpx;
+}
+.titleTag{
+  
+}

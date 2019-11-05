@@ -1,6 +1,19 @@
 <!--pages/editInfo/editInfo.wxml-->
-<view class="editInfo">
-<view class="title">
-<view class="titleTag">标题：</view><input placeholder="请输入标题"></input>
+<view class="pop">
+  <mp-form id="form" models="{{formData}}">
+    <mp-cells title="">
+      <mp-checkbox-group bindchange="radioChange">
+        <mp-checkbox label="post" value="post" checked="{{showPage}}">创建帖子</mp-checkbox>
+        <mp-checkbox label="task" value="task" checked="{{showPage}}">创建任务</mp-checkbox>
+      </mp-checkbox-group>
+    </mp-cells>
+  </mp-form>
 </view>
+<view class="editInfo" wx:if="{{showPage=='post'}}">
+  <view class="title">
+    <view class="titleTag">标题：</view>
+    <input placeholder="请输入标题"></input>
+  </view>
+</view>
+<view class="editInfo" wx:else="{{showPage=='task'}}">
 </view>

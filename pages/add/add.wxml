@@ -1,2 +1,28 @@
 <!--pages/add/add.wxml-->
-<text>pages/add/add.wxml</text>
+<view class="pop">
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <radio class="radio" wx:for-items="{{tabData.items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+        <text>{{item.name}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  <view class="page">
+  <view class="page__bd">
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="default" bindtap="openConfirm">创建</button>
+        </view>
+    </view>
+  <mp-dialog title="test" wx:if="{{tabData.dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{tabData.buttons}}">
+        <view>确定创建吗</view>
+    </mp-dialog>
+</view>
+</view>
+<view class="editInfo" wx:if="{{showPage=='post'}}">
+  <view class="title">
+    <view class="titleTag">标题：</view>
+    <input placeholder="请输入标题"></input>
+  </view>
+</view>
+<view class="editInfo" wx:else="{{showPage=='task'}}">
+</view>
