@@ -8,15 +8,15 @@
     </radio-group>
   </view>
   <view class="page">
-  <view class="page__bd">
-        <view class="weui-btn-area">
-            <button class="weui-btn" type="default" bindtap="openConfirm">创建</button>
-        </view>
+    <view class="page__bd">
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="default" bindtap="openConfirm">创建</button>
+      </view>
     </view>
-  <mp-dialog title="test" wx:if="{{tabData.dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{tabData.buttons}}">
-        <view>确定创建吗</view>
-    </mp-dialog>
-</view>
+    <mp-dialog title="创建" show="{{tabData.dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+</mp-dialog>
+  </view>
 </view>
 <view class="editInfo" wx:if="{{showPage=='post'}}">
   <view class="title">

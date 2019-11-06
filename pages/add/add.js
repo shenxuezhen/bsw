@@ -20,12 +20,7 @@ Page({
       selectTab: '',
       selectTabName: '',
       dialogShow: false,
-      showOneButtonDialog: false,
-      buttons: [{
-        text: '取消'
-      }, {
-        text: '确定'
-      }],
+      showOneButtonDialog: false
     }
 
 
@@ -44,15 +39,14 @@ Page({
     })
   },
   openConfirm: function() {
-    console.log(1)
     this.setData({
       'tabData.dialogShow': true
     })
   },
   tapDialogButton(e) {
     this.setData({
-      dialogShow: false,
-      showOneButtonDialog: false
+      'tabData.dialogShow': false,
+      'tabData.showOneButtonDialog': false
     })
   },
   /**
