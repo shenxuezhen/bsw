@@ -20,10 +20,9 @@ Page({
       selectTab: '',
       selectTabName: '',
       dialogShow: false,
-      showOneButtonDialog: false
+      showOneButtonDialog: false,
+      showButton: [{ text: '取消' }, { text: '确认' }]
     }
-
-
   },
 
   /**
@@ -48,6 +47,9 @@ Page({
       'tabData.dialogShow': false,
       'tabData.showOneButtonDialog': false
     })
+    if(e.detail.index==1){
+      
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

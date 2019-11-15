@@ -13,8 +13,8 @@
         <button class="weui-btn" type="default" bindtap="openConfirm">创建</button>
       </view>
     </view>
-    <mp-dialog title="创建" show="{{tabData.dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
-    <view>test content</view>
+    <mp-dialog title="创建" show="{{tabData.dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{tabData.showButton}}">
+    <view>确定创建吗？</view>
 </mp-dialog>
   </view>
 </view>

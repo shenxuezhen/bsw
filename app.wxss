@@ -10,3 +10,8 @@
   box-sizing: border-box;
 } 
 
+.pop,.editInfo{
+  margin: 0 auto;
+  width: 680rpx;
+
+}
