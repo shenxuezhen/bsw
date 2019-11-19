@@ -4,12 +4,6 @@ const app = getApp()
 const speedDatas=require('../data/index.js')
 
 Page({
-  onShareAppMessage: function () {
-    return {
-      title: 'swiper',
-      path: 'page/component/pages/swiper/swiper'
-    }
-  },
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -35,21 +29,35 @@ Page({
     })
   },
   onLoad: function () {
-    this.setData({
-      speedData: speedDatas.data.speed,
-      complatedData: speedDatas.data.complated,
-      hotData: speedDatas.data.hot
+    var that=this;
+    
+    wx.login({
+      success(res){
+        console.log(res);
+      }
+    })
+    wx.request({
+      url: 'https://baishiwu.top/index',
+      method: "GET",
+      success: function (res) {
+        that.setData({
+          speedData: res.data.urgency,
+          complatedData: res.data.finished,
+          hotData: res.data.invitation 
+        })
+      }
     })
     if (app.globalData.userInfo) {
-      this.setData({
+      that.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+      
+    } else if (that.data.canIUse){
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
-        this.setData({
+        that.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
         })
@@ -59,7 +67,7 @@ Page({
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
-          this.setData({
+          that.setData({
             userInfo: res.userInfo,
             hasUserInfo: true
           })
@@ -70,13 +78,11 @@ Page({
   swiperChange: function () {
   },
   jumpDetail(e) {
-    console.log(111);
-    var url = e.currentTarget.dataset.url;
     var type = e.currentTarget.dataset.type;
-    wx.navigateTo({ url: url})
+    var id = e.currentTarget.dataset.id;
+    wx.navigateTo({ url: `../editInfo/editInfo?id=${id}&type=${type}`})
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

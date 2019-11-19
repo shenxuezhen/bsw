@@ -6,10 +6,6 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <text>你好</text>
   </view>-->
   <view class="header">
     <image src="../images/logo.png"></image>
@@ -24,24 +20,27 @@
     </swiper>
   </view>
   <view class="list">
+  <!-- 加急 -->
     <view class="speed">
       <image src="../images/speed-bg.png"></image>
       <view>
         <view class="listLi" wx:for="{{speedData}}" wx:key="{{item.id}}">
-          <view data-url="{{item.url}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
+          <view data-id="{{item.id}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
         </view>
       </view>
     </view>
+    <!-- 已完成 -->
    <view class="complated">
       <image src="../images/complated-bg.png"></image>
       <view>
-        <view class="listLi" wx:for="{{complatedData}}"  wx:key="{{item.id}}" data-url="{{item.url}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
+        <view class="listLi" wx:for="{{complatedData}}"  wx:key="{{item.id}}" data-id="{{item.id}}" data-type="task" bindtap="jumpDetail">{{item.title}}</view>
       </view>
     </view>
+    <!-- 热门帖子 -->
     <view class="hot">
       <image src="../images/hot-bg.png"></image>
       <view>
-        <view class="listLi" wx:for="{{hotData}}" wx:key="{{item.id}}" data-url="{{item.url}}" data-type="hot" bindtap="jumpDetail">{{item.title}}</view>
+        <view class="listLi" wx:for="{{hotData}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-type="post" bindtap="jumpDetail">{{item.title}}</view>
       </view>
     </view>
   </view>

@@ -1,1 +1,79 @@
 /* pages/editInfo/editInfo.wxss */
+
+.section {
+  margin: 250rpx 100rpx;
+  height: 450rpx;
+  border: 1rpx solid #a0a0a0;
+  border-radius: 10rpx;
+  -moz-box-shadow: 10rpx 10rpx 10rpx #a0a0a0; /* 老的 Firefox */
+  box-shadow: 10rpx 10rpx 10rpx #a0a0a0;
+}
+.section .tip{
+  display: inline-block;
+  margin: 10% 0 10% 10% ;
+  width: 80%;
+}
+.radio-group {
+  display: block;
+  margin: 0 auto 10%;
+  width: 100%;
+}
+
+.radio-group .radio {
+  width: 50%;
+  text-align: center;
+}
+
+.section button {
+  display: inline-block;
+  width: 30%;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 0 10%;
+}
+
+.createSection{
+  margin: 20rpx auto;
+  width: 680rpx;
+}
+
+.cratePost .createHead{
+  margin-bottom: 60rpx;
+  width: 100%;
+  height: 62rpx;
+}
+.cratePost .createHead text{
+  float: left;
+  display: inline-block;
+  margin-right: 5%;
+  width: 20%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border: 1rpx solid #000;
+  border-radius: 8rpx;
+}
+.cratePost .createHead input{
+  display: inline-block;
+  padding-left: 3%;
+  width: 70%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border: 1rpx solid #000;
+  border-radius: 8rpx;
+}
+.cratePost .createBody{
+  margin-bottom: 60rpx;
+  width: 100%;
+}
+.cratePost .createBody textarea{
+  padding: 5%;
+  width: 88%;
+  height: 600rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border: 1rpx solid #000;
+  border-radius: 8rpx;
+}

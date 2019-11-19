@@ -1,19 +1,41 @@
 <!--pages/editInfo/editInfo.wxml-->
-<view class="pop">
-  <mp-form id="form" models="{{formData}}">
-    <mp-cells title="">
-      <mp-checkbox-group bindchange="radioChange">
-        <mp-checkbox label="post" value="post" checked="{{showPage}}">创建帖子</mp-checkbox>
-        <mp-checkbox label="task" value="task" checked="{{showPage}}">创建任务</mp-checkbox>
-      </mp-checkbox-group>
-    </mp-cells>
-  </mp-form>
+<!-- 创建 -->
+<view class="create">
+  <view class="section" wx:if="{{createTip}}">
+    <text class="tip">请选择创建类型</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <radio class="radio" value="post" checked="true">
+        <text value="post">创建帖子</text>
+      </radio>
+      <radio class="radio" value="task" checked="false">
+        <text value="task">创建任务</text>
+      </radio>
+    </radio-group>
+    <button type="default" size="{{defaultSize}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover">取消</button>
+    <button type="primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="primary">确定</button>
+  </view>
+  <view class="createSection" wx:if="{{beginCreate}}">
+    <view class="cratePost" wx:if="{{createType=='post'}}">
+      <view class="createHead">
+        <text class="title">标题:</text>
+        <input class="weui-input" maxlength="20" placeholder="请输入标题，最大长度为20" />
+      </view>
+      <view class="createBody">
+        <textarea bindblur="bindTextAreaBlur" maxlength="200" placeholder="请输入帖子内容，最大长度为200" />
+      </view>
+      <button type="default" disabled="{{disabled}}" bindtap="default"> 取消 </button>
+      <button type="primary" disabled="{{disabled}}" bindtap="primaryPsot"> 创建 </button>
+    </view>
+    <view class="crateTask" wx:if="{{createType=='task'}}"></view>
+  </view>
 </view>
-<view class="editInfo" wx:if="{{showPage=='post'}}">
+<!-- 帖子详情 -->
+<view class="editInfo" wx:if="{{postShow}}">
   <view class="title">
     <view class="titleTag">标题：</view>
     <input placeholder="请输入标题"></input>
   </view>
 </view>
-<view class="editInfo" wx:else="{{showPage=='task'}}">
+<!-- 任务详情 -->
+<view class="editInfo" wx:if="{{taskShow}}">
 </view>

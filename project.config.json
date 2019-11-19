@@ -14,7 +14,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
-	"appid": "wx7ed301c158f779db",
+	"appid": "wx0fb8ed7e6042c843",
 	"projectname": "bsw",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -75,16 +75,17 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 4,
 					"name": "pages/editInfo/editInfo",
 					"pathName": "pages/editInfo/editInfo",
-					"query": "",
+					"query": "id=5&type=task",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "pages/add/add",
 					"pathName": "pages/add/add",
+					"query": "",
 					"scene": null
 				}
 			]
