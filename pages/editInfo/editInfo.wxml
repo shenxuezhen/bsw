@@ -11,20 +11,23 @@
         <text value="task">创建任务</text>
       </radio>
     </radio-group>
-    <button type="default" size="{{defaultSize}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover">取消</button>
-    <button type="primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="primary">确定</button>
+    <button type="default" bindtap="default">取消</button>
+    <button type="primary" bindtap="primary">确定</button>
   </view>
   <view class="createSection" wx:if="{{beginCreate}}">
     <view class="cratePost" wx:if="{{createType=='post'}}">
-      <view class="createHead">
-        <text class="title">标题:</text>
-        <input class="weui-input" maxlength="20" placeholder="请输入标题，最大长度为20" />
-      </view>
-      <view class="createBody">
-        <textarea bindblur="bindTextAreaBlur" maxlength="200" placeholder="请输入帖子内容，最大长度为200" />
-      </view>
-      <button type="default" disabled="{{disabled}}" bindtap="default"> 取消 </button>
-      <button type="primary" disabled="{{disabled}}" bindtap="primaryPsot"> 创建 </button>
+    <!-- 帖子创建区 -->
+      <form bindsubmit="postCS" bindreset="postCR">
+        <view class="createHead">
+          <text class="title">标题:</text>
+          <input name="title" class="weui-input" maxlength="20" placeholder="请输入标题，最大长度为20" />
+        </view>
+        <view class="createBody">
+          <textarea name="description" maxlength="200" placeholder="请输入帖子内容，最大长度为200" />
+        </view>
+        <button formType="submit" type="primary" bindtap="postCS"> 提交 </button>
+        <button formType="reset" type="default" bindtap="postCR"> 重置 </button>
+      </form>
     </view>
     <view class="crateTask" wx:if="{{createType=='task'}}"></view>
   </view>

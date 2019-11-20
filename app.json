@@ -6,6 +6,7 @@
     "pages/post/post",
     "pages/person/person",
     "pages/add/add",
+    "pages/detail/detail",
     "pages/logs/logs"
   ],
   "window": {

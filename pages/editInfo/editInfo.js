@@ -19,7 +19,6 @@ Page({
   },
   //取消事件
   default:function(e){
-    console.log(111);
     wx.reLaunch({url: "/pages/index/index"})
   },
   //确定弹窗事件
@@ -29,15 +28,31 @@ Page({
       createTip:false
     })
   },
-  // 创建任务
-  primaryPsot:function(){
-
+  // 创建帖子
+  postCS:function(e){
+    console.log(e)
+    if (e.type == 'tap' || !e.detail.value.title || !e.detail.value.description)return;
+    var That=this;
+    wx.request({
+      url: 'https://baishiwu.top/invitation/create',
+      method: "POST",
+      data: e.detail.value,
+      dataType:'json',
+      success: function (res) {
+        if (res.statusCode==200){
+          wx.navigateTo({
+            url: `../detail/detail?type=${That.createType}&id=${res.data}`,
+          })
+        }
+      }
+    })
   },
+  //充值
+  postCR:function(){},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     var That=this;
     if (options && options.type == "task"){
       That.setData({
