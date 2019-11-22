@@ -7,13 +7,6 @@
     <image src="../images/search.png"></image>
   </view>
   <view class="list">
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
-    <text>水电费水电费水电费水电费水电费水电费…</text>
+    <text wx:for="{{postList}}" :key="{{item.title}}" data-id="item.id" wx:if="{{item.description}}">{{item.description}}</text>
   </view>
 </view>

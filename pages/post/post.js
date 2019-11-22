@@ -5,18 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    postList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var That=this;
     wx.request({
       url: 'https://baishiwu.top/invitation/list?pageNumber=1',
       type:'GET',
       success:function(res){
-        console.log(res.data)
+        That.setData({
+          postList: res.data
+        })
       }
     })
   },
